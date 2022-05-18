@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-ObjAssign2</title>
+</head>
+<body>
+
+    <h1 style="text-align:center;"> Area of Rectangle  </h1>
+	<center>
+      <script>
+  
+          class Rectangle {
+  
+             constructor(height, width) {
+              this.height = height;
+              this.width = width;
+            }
+            
+          }
+          
+          
+            Rectangle.prototype.getArea = function() // added getArea as a prototype property
+			{
+              return (this.height * this.width);
+            };
+  
+  
+         
+          const rectangle = new Rectangle(5, 8);  // Creating object
+  
+          document.write("Height of Rectangle is: " + rectangle.height + "<br>");
+          document.write("Width of Rectangle is : " + rectangle.width + "<br><br>");
+  
+          var area = rectangle.getArea();
+          document.write("Area of rectangle is : " + area);
+          
+      </script>
+	<center>
+   </body>
+  
+  </html>
