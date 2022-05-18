@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-FunAssign1</title>
+</head>
+<body>
+	 
+    <h1 style="text-align:center;"> Composed Value Function </h1>
+    <center>
+     <script>
+     
+          var number = window.prompt("Enter Number ");
+          var result = composedValue(number);
+          
+          document.write("The Square of Entered Double Number ="+result);
+        
+          // Composed Function
+          function composedValue(x){
+              return (square(double(x)));
+          }
+          
+          // function to Square values
+          function square(x){ 
+              return(x * x);
+          }
+          
+          // function to double values
+          function double(x){
+               return(x * 2);
+          }
+          
+     </script>
+	 <center>
+    </body>
+</html>
